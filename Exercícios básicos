@@ -1,0 +1,109 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+Primeiro programa 
+
+int main(){
+	double  valor;
+	printf("Digite o valor:\n" );
+	scanf("%lf", &valor);
+	double quadrado = pow(valor, 2);
+	double cubo = pow(valor, 3);
+	printf("O quadrado é : %.2lf\n", quadrado);
+	printf("O quadrado é : %.2lf\n", cubo);
+
+}
+
+ Segundo programa 
+int main(){
+	double montante, principal, taxa, tempo;
+	printf("Insira o valor do capital:\n ");
+	scanf("%lf", &principal);
+	printf("Insira a taxa dos juros:\n ");
+	scanf("%lf", &taxa);
+	printf("Insira o tempo :\n ");
+	scanf("%lf", &tempo);
+	 montante = principal * pow((1 + taxa / 100), tempo);
+	printf("O montante e : %.2lf \n ", montante);
+}
+
+
+ Terceiro programa
+int main (){
+	double num;		printf ("Digite um numero:\n");
+	scanf("%lf", &num);
+	double raiz;
+	raiz =  sqrt(num);
+	printf("A raiz quadrada do numero e: %.2lf", raiz);
+}
+
+
+quarto programa
+int main(){
+	double lados, altura;
+	printf("Qual o comprimento do lado do retangulo:\n");
+	scanf("%lf", &lados);
+	printf("Qual o comprimento da altura do retangulo:\n");
+	scanf("%lf", &altura);
+	double perimetro, area;
+	perimetro = lados*2 + altura*2;
+	area = lados * altura;
+	printf("O perimetro e: %.2lf\n ", perimetro);
+	printf("A area e: %.2lf\n ", area);
+}
+
+
+
+int main(){
+	double a, b, c, delta, x1, x2;
+	printf(" (ax^2 + bx + c = 0):\n");
+	printf("Insira o valor de A:");
+	scanf("%lf", &a);
+	printf("Insira o valor de B:");
+	scanf("%lf", &b);
+	printf("Insira o valor de C:");
+	scanf("%lf", &c);
+	printf("\n F(x) = %.lfx^2 + %.lfx + %.lf", a, b, c);
+	delta = b*b - 4*a*c;
+	if (delta<0){
+		printf("\n Delta = %8.2f \n Nao possui raizes reais\n\n", delta);
+	}
+	else{
+		if(delta==0){
+			printf("\n %8.2f \nx' = %8.2f\n\n", delta,x1);
+		}
+	else{
+		x1 = (-b - sqrt(delta)) / (2*a);
+		x2 = (-b + sqrt(delta)) / (2*a);
+		printf("\n Delta = %8.2f \nx' = %8.2f\nx'' = %8.2f\n\n ", delta, x1, x2);
+		}
+	}
+}
+	
+
+int main(){
+	int hora, min;
+	double qtdMin;
+	printf("Qual a hora atual:\n");
+	scanf("%d", &hora);
+	qtdMin = (hora * 60) + min;
+
+	printf("Qual os minutos atuais:\n");
+	scanf("%d", &min);
+
+	printf("Tempo restante e: %2.lf\n", qtdMin);
+}
+
+
+
+int main(){
+	double x, y, x1, y1, dist;
+	printf("Insira a coordenada de x1:\n");
+	scanf("%lf", &x1);
+	printf("Insira a coordenada de y1:\n");
+	scanf("%lf", &y1);
+	dist = sqrt((x - x1)*2 + (y - y1)*2);
+	printf("A distancia dos pontos e: %2.lf", dist);
+	}
+
