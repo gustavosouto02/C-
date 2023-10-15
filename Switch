@@ -1,0 +1,184 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+int main(){
+int valor = 5 ;
+
+switch(valor){
+case 1:
+printf("O valor e 1.\n");
+break;
+case 2:
+printf("O valor e 2.\n");
+break;
+case 3:
+printf("O valor e 3.\n");
+break;
+
+default:
+printf("O valor nao se encontra na lista.");
+
+}
+}
+*/
+/*
+int main(){
+int op;
+double n1, n2, res;
+
+printf("Escolha uma operacao: \n1-Soma.\n2-Subtracao.\n3-Multiplicacao.\n4-Divisao. \n");
+scanf("%d", &op );
+
+switch(op){
+
+
+case 1:
+printf("\nVoce escolheu soma.");
+printf("\nDigite os valores para somar: \n");
+scanf("%lf %lf", &n1, &n2);
+
+printf("\nO resultado e: %.2lf", n1+n2);
+break;
+
+case 2:
+printf("\nVoce escolheu subtracao.");
+printf("\nDigite os valores para subtrair: \n");
+scanf("%lf %lf", &n1, &n2);
+printf("\nO resultado e: %.2lf", n1-n2);
+break;
+
+case 3:
+printf("\nVoce escolheu multiplicacao.");
+printf("\nDigite os valores para multiplicar: \n");
+scanf("%lf %lf", &n1, &n2);
+printf("\nO resultado e: %.2lf", n1*n2);
+break;
+
+case 4:
+printf("\nVoce escolheu divisao.");
+printf("\nDigite os valores para dividir: \n");
+scanf("%lf %lf", &n1, &n2);
+res=n1/n2;
+printf("\nO resultado e: %.2lf", res);
+
+if(n2!=0){
+res = n1/n2;}
+else {
+printf("Erro, divisao por zero.");
+return 1;
+}
+break;
+
+default:
+printf("Operacao invalida");
+
+}
+
+}*/
+/*
+int main(){
+int mes;
+
+printf("Digite um numero de 1 a 12, referente ao mes desejado.");
+scanf("%d", &mes);
+printf("Janeiro=1\nFevereiro=2\nMarco=3\nAbril=4\nMaio=5\nJunho=6\nJulho=7\nAgosto=8\nSetembro=9\nOutubro=10\nNovembro=11\nDezembro=12\n");
+
+switch(mes){
+case 1://jan
+case 3://mar
+case 5://mai
+case 7://jul
+case 8://ago
+case 10://out
+case 12://dez
+printf("\nO mes tem 31 dias");
+break;
+
+case 2://fev
+printf("\nO mes tem 28 dias");
+break;
+
+case 4://abr
+case 6://jun
+case 9://set
+case 11://nov
+printf("\nO mes tem 30 dias");
+break;
+}
+
+}*/
+/*
+int main(){
+int forma;
+double raio, base, altura, area;
+
+printf("Escolha uma forma: \n1-Circulo.\n2-Triangulo.\n3-Quadrado.\n");
+scanf("%d", &forma );
+
+switch(forma){
+
+case 1://circulo
+printf("Voce escolheu o circulo.");
+printf("\nDigite o valor do raio: ");
+scanf("%lf", &raio);
+area = 3.14 * (raio * raio);
+printf("\nA area e: %.2lf", area);
+break;
+
+case 2://triangulo
+printf("Voce escolheu o triangulo.");
+printf("\nDigite o valor da sua base: ");
+scanf("%lf", &base);
+printf("\nDigite o valor da sua altura: ");
+scanf("%lf", &altura);
+area = (base * altura)/2;
+printf("\nA area e: %.2lf", area);
+break;
+
+case 3://quadrado
+printf("Voce escolheu o quadrado.");
+printf("\nDigite o valor da base: ");
+scanf("%lf", &base);
+area = base * base;
+printf("\nA area e: %.2lf", area);
+break;
+
+default:
+printf("Invalido!!!!\n");
+break;
+
+}
+
+return 0;
+} */
+/*
+int main(){
+int dia;
+
+printf("Escolha um numero de 1 a 7:\n1-Segunda\n2-Terca\n3-Quarta\n4-Quinta\n5-Sexta\n6-Sabado\n7-Domingo.\n");
+scanf("%d", &dia);
+
+
+switch (dia){
+case 1://segunda
+case 2://terca
+case 3://quarta
+case 4://quinta
+case 5://sexta
+printf("\nDia util.");
+break;
+
+case 6://sabado
+case 7://domingo
+printf("\nFim de semana.");
+break;
+
+default:
+printf("Invalido!!!") ;
+break;
+
+}
+return 0;
+}
+*/
